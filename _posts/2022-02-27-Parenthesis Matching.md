@@ -65,7 +65,7 @@ void solve_parallel_part1(Pos* vec, Stack* _stack, const char* str, int64_t star
 }
 
 ```
-```C++
+```cpp
 void solve_parallel_part2(Pos* vec, Stack* _stack[THR_NUM]) {
 	for (int i = 1; i < THR_NUM; ++i) {
 		int idx = -1;
