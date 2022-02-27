@@ -3,7 +3,7 @@ Given a well-formed sequence of parentheses stored in an array,
 determine the index of the mate of each parentheses stored in the array.
 
 # Sequential 접근
-```C++
+```cpp
 std::vector<int> solve(const char* str, int64_t n) {
   std::vector<int> vec(n, 0);
   std::vector<Pos> _stack; _stack.reserve(n / 2);
@@ -29,7 +29,7 @@ std::vector<int> solve(const char* str, int64_t n) {
 ```
 
 # Parallel 접근
-```C++
+```cpp
 void solve_parallel_part1(Pos* vec, Stack* _stack, const char* str, int64_t start, int64_t n) 
 {
 
