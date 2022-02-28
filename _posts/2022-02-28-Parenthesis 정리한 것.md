@@ -1,14 +1,24 @@
 # Node
+
   (()()) # valid parentheses.
+  
   -> (  (), () )
-     A  B   C
-  Node A has Node B and Node C. (Node A is parent of Node B, and Node C) 
+  
+     A B C
+     
+  Node A has Node B and Node C. (Node A is parent of Node B, and Node C)
+  
   (Node B and Node C are children of A)
+  
 
 # Virtual Node
+
   ()()) # not valid parentheses.
+  
   ->  #(  () () )
-      A`   B  C
+  
+      A` B C
+      
   A` <- virtual Node
   
   Think ()()) as #( ()()) 
