@@ -61,7 +61,7 @@ for (int64_t i = 0; i < n; ++i) { // n : size of block.
 # Step 2.
 ```cpp
 for (int i = 1; i < THR_NUM; ++i) { // i == 0, _stack[i] has no virtual-node. only real-node. THR_NUM <- used thread count.
-  int idx = -1;
+  int64_t idx = -1;
   for (int64_t j = 0; j < size(_stack[i]); ++j) {
     if (_stack[i]->_arr[j] > 0) { // is real node?
       break;
